@@ -1,5 +1,9 @@
 name: NEW
 on:
+   workflow_dispatch:
+      inputs:
+        package_name:
+          description: "Package name of the game:"
   push:
     branches:
       - main
