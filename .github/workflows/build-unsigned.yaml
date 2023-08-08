@@ -1,9 +1,5 @@
 name: NEW
 on:
-   workflow_dispatch:
-      inputs:
-        package_name:
-          description: "Package name of the game:"
   push:
     branches:
       - main
@@ -28,7 +24,7 @@ on:
       - 'NOTICE'
 
 jobs:
-  BuildUnsigned:
+  Build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
